@@ -55,7 +55,7 @@ body{
     background: var(--secondary-color);
     color: var(--tertiary-color);
     width: 180px;
-    padding: 5px;
+    padding: 5px; 
     font-size: 13px;
 
 }
@@ -78,10 +78,15 @@ body{
     color: var(--tertiary-color);
 
 }
-
 #totalTip {
-    font-size: 20px;
-    margin-top: 5px;
-    text-align: center;
+    background: var(--secondary-color);
     color: var(--tertiary-color);
+    width: 200px;
+    padding: 5px; 
+    font-size: 17px;
+    border-radius: 50px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 1px 1px 2px 2px var(--tertiary-color);
+
 }

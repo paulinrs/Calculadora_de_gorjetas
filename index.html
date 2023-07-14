@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Calculadora de Gorjetas</title>
 </head>
-
 <body>
     <div id="container">
         <div>
@@ -19,7 +17,7 @@
                     <p>Quanto ficou a conta?</p>
                 </label>
                 <p>
-                    R$ <input type="number" placeholder="Valor" name="bill" id="bill" class="formInput">
+                    R$ <input type="number" placeholder="Valor" name="bill" id="bill" class="formInput" required>
                 </p>
                 <label for="serviceQual">
                     <p>Como foi seu serviço?</p>
@@ -34,21 +32,21 @@
                         <option value="0.05">5% - Péssimo</option>
                     </select>
                 </p>
-                <label for="people" <p>Quantas pessoas vão dividir a conta?</p>
+                <label for="people">
+                    <p>Quantas pessoas vão dividir a conta?</p>
                 </label>
                 <p>
-                    <input type="number" placeholder="pessoa(s)" name="people" id="people" class="formInput">
+                    <input type="number" placeholder="pessoa(s)" name="people" id="people" class="formInput" required>
                 </p>
                 <button type="submit" class="formSubmit">Calcular!</button>
             </form>
-            <div id="totalTip">
-                Gorjeta total:
-                R$<span id="tip">0.00</span>
-                <p id="each">Por pessoa!</p>
-            </div>
+        </div>
+        <div id="totalTip">
+            Gorjeta total:
+            R$<span id="tip">0.00</span>
+            <span id="each">por pessoa!</span>
         </div>
     </div>
     <script type="text/javascript" src="scripts.js"></script>
 </body>
-
 </html>
